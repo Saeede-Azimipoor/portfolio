@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#eedcf2" />
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fredoka:wght@700&family=Titan+One&display=swap"
+    rel="stylesheet">
+  <title>Saeede Azimipoor — Creative Developer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="room" aria-labelledby="page-title">
+    <h1 id="page-title" class="sr-only">Saeede Azimipoor, creative developer</h1>
+    <div class="name-wall" aria-hidden="true"><span>SAEEDE</span><span>AZIMIPOOR</span></div>
+
+    <div class="object mascot" aria-label="Interactive illustrated workspace">
+      <div class="character-stage">
+
+        <!-- scene.svg gets injected here by script.js -->
+        <span class="laptop-glow" aria-hidden="true"></span>
+        <div class="hint svg-tip" id="svgTip" aria-hidden="true"></div>
+      </div>
+
+    </div>
+    </div>
+
+    <span class="dust d1"></span><span class="dust d2"></span><span class="dust d3"></span><span class="dust d4"></span>
+    <p class="room-note"><span>Everything has a story — choose an object.</span></p>
+  </main>
+
+  <dialog id="about" aria-labelledby="about-title">
+    <div class="modal-head">
+      <h2 id="about-title">About me</h2><button class="close" type="button" aria-label="Close">×</button>
+    </div>
+    <div class="modal-body">
+      <p>I’m Saeede Azimipoor, a creative developer who enjoys turning thoughtful ideas into useful, character-filled
+        digital experiences.</p>
+      <p>I care about responsive design, small details, and the moment a product stops feeling like a screen and starts
+        feeling alive.</p>
+      <div class="chips" aria-label="Skills and interests"><span class="chip">HTML & CSS</span><span
+          class="chip">Tailwind</span><span class="chip">Flutter</span><span class="chip">Responsive design</span><span
+          class="chip">UI details</span></div>
+    </div>
+  </dialog>
+
+  <dialog id="work" aria-labelledby="work-title">
+    <div class="modal-head">
+      <h2 id="work-title">Selected work</h2><button class="close" type="button" aria-label="Close">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="project-list">
+        <article class="project-card">
+          <small>COMPLETED · FLUTTER</small>
+          <h3>کتاب مقدس</h3>
+          <p>A bilingual Persian and English Bible reader built for calm, focused, offline reading.</p>
+          <div class="chips"><span class="chip">FA / EN</span><span class="chip">Offline-first</span><span
+              class="chip">Search</span></div>
+        </article>
+        <article class="project-card">
+          <small>PRODUCT CONCEPT</small>
+          <h3>باکس / Box</h3>
+          <p>A bilingual box manager for organizing packed items, photos, categories, and QR labels.</p>
+          <div class="chips"><span class="chip">Product design</span><span class="chip">QR</span><span class="chip">FA /
+              EN</span></div>
+        </article>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="resume" aria-labelledby="resume-title">
+    <div class="modal-head">
+      <h2 id="resume-title">Resume</h2><button class="close" type="button" aria-label="Close">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="resume-grid">
+        <div>
+          <h3>FOCUS</h3>
+          <p>Front-end development, responsive interfaces, and Flutter app development.</p>
+        </div>
+        <div>
+          <h3>SKILLS</h3>
+          <ul>
+            <li>HTML, CSS & Tailwind CSS</li>
+            <li>Responsive web design</li>
+            <li>Flutter & cross-platform UI</li>
+            <li>Product thinking and visual polish</li>
+          </ul>
+        </div>
+      </div>
+      <p class="tiny-note">For a current copy of my full resume, get in touch.</p>
+      <a class="cta" href="mailto:saeedeazimiap@gmail.com?subject=Resume%20request">Request my resume</a>
+    </div>
+  </dialog>
+
+  <dialog id="contact" aria-labelledby="contact-title">
+    <div class="modal-head">
+      <h2 id="contact-title">Say hello</h2><button class="close" type="button" aria-label="Close">×</button>
+    </div>
+    <div class="modal-body">
+      <p>Have an idea with a pulse? Let’s make it clear, useful, and memorable.</p>
+      <a class="cta" href="mailto:saeedeazimiap@gmail.com">saeedeazimiap@gmail.com</a>
+    </div>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
