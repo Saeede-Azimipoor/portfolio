@@ -94,6 +94,41 @@ button {
   isolation: isolate;
 }
 
+.clock-stage svg {
+  filter: drop-shadow(4px 4px 0 color-mix(in srgb, var(--ink) 78%, transparent));
+}
+
+.clock-stage {
+
+  position: absolute;
+  top: 35%;
+  left: 22%;
+  width: clamp(52px, 7vw, 82px);
+  z-index: 5;
+  pointer-events: auto;
+}
+
+.clock-stage .hint {
+  left: 50%;
+  bottom: calc(100% + 10px);
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity .15s ease;
+}
+
+.clock-stage:hover .hint,
+.clock-stage:focus-visible .hint {
+  opacity: 1;
+  background: var(--yellow);
+}
+
+
+.clock-stage svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .room::after {
   content: "";
   position: absolute;
@@ -404,20 +439,23 @@ button {
 }
 
 /* Clickable SVG layers */
+
+
+
 .mascot-character #Laptop,
 .mascot-character #girl,
-.mascot-character #board>g:first-of-type,
-.mascot-character #board>g:last-of-type {
+.mascot-character #task-frame,
+.mascot-character #cat,
+.mascot-character #linkedin-frame,
+.mascot-character #github-frame {
   pointer-events: auto;
   cursor: pointer;
+  outline: none;
+
 }
 
-.mascot-character #Laptop:focus,
-.mascot-character #girl:focus,
-.mascot-character #board>g:first-of-type:focus,
-.mascot-character #board>g:last-of-type:focus {
-  outline: none;
-}
+
+
 
 .svg-tip {
   left: 0;
@@ -580,6 +618,40 @@ button {
 .dust.d4 {
   left: 21%;
   top: 38%;
+}
+
+.dust.d5 {
+  left: 12%;
+  top: 12%;
+  background: var(--blue-deep);
+}
+
+.dust.d6 {
+  left: 58%;
+  top: 8%;
+}
+
+.dust.d7 {
+  left: 85%;
+  top: 22%;
+  background: var(--yellow);
+}
+
+.dust.d8 {
+  left: 30%;
+  top: 68%;
+  background: var(--blue-deep);
+}
+
+.dust.d9 {
+  left: 66%;
+  top: 78%;
+}
+
+.dust.d10 {
+  left: 8%;
+  top: 55%;
+  background: var(--yellow);
 }
 
 .room-note {
