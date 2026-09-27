@@ -16,10 +16,10 @@
   --paper: #fffaf6;
   --line: 3px solid var(--ink);
   --shadow: 5px 5px 0 var(--ink);
-  color-scheme: light dark;
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --outside: #171525;
     --wall: #242236;
@@ -38,7 +38,7 @@
     --paper: #2e2b40;
     --shadow: 5px 5px 0 #0d0c13;
   }
-}
+} */
 
 * {
   box-sizing: border-box;
