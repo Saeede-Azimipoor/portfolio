@@ -978,3 +978,12 @@ dialog::backdrop {
     transition-duration: .001ms !important;
   }
 }
+/* single project card spans the full dialog width */
+.project-list:has(> :only-child) > .project-card {
+  grid-column: 1 / -1;
+}
+
+.project-card h3 .h3-en {
+  font-size: 0.58em;
+  letter-spacing: 0.02em;
+}
