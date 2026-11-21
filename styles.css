@@ -820,6 +820,31 @@ dialog::backdrop {
   outline: none;
 }
 
+.store-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.store-links .cta {
+  min-height: 40px;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.store-soon {
+  background: var(--paper);
+  border-style: dashed;
+  box-shadow: none;
+  cursor: default;
+  opacity: .75;
+}
+
+.store-soon:hover {
+  transform: none;
+}
+
 .tiny-note {
   font-size: 11px !important;
   color: color-mix(in srgb, var(--ink) 72%, transparent);
